@@ -63,11 +63,12 @@
         </mat-card-header>
         <mat-card-content *ngFor="let detail of details">
           <mat-card-subtitle>
-            Email Address: {{ detail.candidate[0].email }}
+            <mat-icon style="color: red;"> email</mat-icon> {{ detail.candidate[0].email }}
           </mat-card-subtitle>
           <hr>
           <mat-card-subtitle>
-            Mobile Number:{{ detail.candidate[0].mobile }}
+            <mat-icon style="color:green"> call</mat-icon>
+            {{ detail.candidate[0].mobile }}
           </mat-card-subtitle>
           <hr>
           <mat-card-subtitle>
@@ -111,7 +112,7 @@
         Name: {{detail.client[0].name}}
       </mat-card-subtitle>
       <mat-card-subtitle>
-        Link: {{detail.client[0].link}}
+        Link:<span><mat-icon style="color:blue">link</mat-icon></span> {{detail.client[0].link}}
       </mat-card-subtitle>
       </mat-card-content>
     </mat-card>
