@@ -1,6 +1,6 @@
 .flex{
   display: flex;
-  width:100%;
+  width:80%;
   margin: auto;
   /* flex-wrap: wrap; */
   justify-content: space-evenly;

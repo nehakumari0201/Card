@@ -1,0 +1,119 @@
+<p>card-details works!</p>
+<mat-card class="card">
+  <div class="flex">
+    <mat-card *ngFor="let detail of details" class="flexRow">
+      <mat-card-title>Created_by</mat-card-title>
+      <span class="title">FullName</span>
+      <p>{{ detail.created_by[0].fullname }}</p>
+      <hr />
+      <mat-card-title>Rounds</mat-card-title>
+      <span class="title">id</span>
+      <p>{{ detail.rounds[0].id }}</p>
+      <span class="title">Name</span>
+      <p>{{ detail.rounds[0].name }}</p>
+      <span class="title">Status</span>
+      <p>{{ detail.rounds[0].status }}</p>
+      <span class="title">id</span>
+      <p>{{ detail.rounds[1].id }}</p>
+      <span class="title">Name</span>
+      <p>{{ detail.rounds[1].name }}</p>
+      <span class="title">status</span>
+      <p>{{ detail.rounds[1].status }}</p>
+    </mat-card>
+    <mat-card class="flexRow1 flex">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Interview Details</mat-card-title>
+        </mat-card-header>
+        <mat-card-content *ngFor="let detail of details">
+          <mat-card-subtitle>
+            Applied_Position: {{ detail.interview[0].applied_position }}
+          </mat-card-subtitle>
+          <hr>
+          <mat-card-subtitle>
+            Excepted Salary:{{ detail.interview[0].e_ctc }}
+          </mat-card-subtitle>
+          <hr>
+          <mat-card-subtitle>
+            Created_at: {{ detail.interview[0].created_at }}
+          </mat-card-subtitle>
+          <hr>
+          <mat-card-subtitle>
+            job Status: {{ detail.interview[0].updated_at }}
+          </mat-card-subtitle>
+          <hr>
+          <mat-card-subtitle>
+            Status: {{ detail.interview[0].status }}
+          </mat-card-subtitle>
+          <hr>
+          <mat-card-subtitle>
+            Comission_Type:
+            {{ detail.interview[0].comission_type }} </mat-card-subtitle
+          >
+          <hr>
+          <mat-card-subtitle>
+            Comission: {{ detail.interview[0].comission }}
+          </mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Candidate Details</mat-card-title>
+        </mat-card-header>
+        <mat-card-content *ngFor="let detail of details">
+          <mat-card-subtitle>
+            Email Address: {{ detail.candidate[0].email }}
+          </mat-card-subtitle>
+          <hr>
+          <mat-card-subtitle>
+            Mobile Number:{{ detail.candidate[0].mobile }}
+          </mat-card-subtitle>
+          <hr>
+          <mat-card-subtitle>
+            Previous Employer: {{ detail.candidate[0].prev_emp }}
+          </mat-card-subtitle><hr>
+          <mat-card-subtitle>
+            job Status: {{ detail.candidate[0].job_status }}
+          </mat-card-subtitle><hr>
+          <mat-card-subtitle>
+            Current Ctc: {{ detail.candidate[0].current_ctc }}
+          </mat-card-subtitle><hr>
+          <mat-card-subtitle>
+            Notice_Periods: {{ detail.candidate[0].notice_period }}
+          </mat-card-subtitle><hr>
+          <mat-card-subtitle>
+            Year_of_experince: {{ detail.candidate[0].year_of_exp }}
+          </mat-card-subtitle><hr>
+          <mat-card-subtitle>
+            Technologies: {{ detail.candidate[0].technologies }}
+          </mat-card-subtitle><hr>
+          <mat-card-subtitle>
+            Avtar: {{ detail.candidate[0].avtar }}
+          </mat-card-subtitle><hr>
+          <mat-card-subtitle>
+            Resume: {{ detail.candidate[0].resume }}
+          </mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+    </mat-card>
+
+    <mat-card class="flexRow m" >
+      <mat-card-header>
+        <mat-card-title>Client</mat-card-title>
+      </mat-card-header>
+      <mat-card-content *ngFor="let detail of details" >
+      <mat-card-subtitle>
+      logo:
+       {{detail.client[0].logo}}
+      </mat-card-subtitle>
+      <mat-card-subtitle>
+        Name: {{detail.client[0].name}}
+      </mat-card-subtitle>
+      <mat-card-subtitle>
+        Link: {{detail.client[0].link}}
+      </mat-card-subtitle>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</mat-card>

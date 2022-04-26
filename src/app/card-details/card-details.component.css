@@ -1,0 +1,35 @@
+.card
+{
+  width:90%;
+  background-color:#ebf4fe ;
+  margin: auto;
+}
+
+.title{
+  font-weight: bold;
+}
+.flex
+{
+  display: flex;
+}
+
+
+.flex>.flexRow1{
+  width:60%;
+  background-color: #ebf4fe;
+}
+
+.flex>.flexRow{
+  width:20;
+  margin-right: 2%;
+  background-color: aliceblue;
+}
+.flexRow1>mat-card{
+  width:48%;
+  margin-right: 2%;
+  background-color: aliceblue;
+}
+ .m
+{
+  margin-left: 2%;
+}
